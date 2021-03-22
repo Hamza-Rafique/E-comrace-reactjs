@@ -4,6 +4,7 @@ const ProductContext = React.createContext();
 //Provider
 //Consuner
  class ProductProvider extends Component {
+     
  state = {
          products:[],
          detailProduct:detailProduct,
@@ -135,6 +136,7 @@ addTotals = () =>{
     })
 }
     render() {
+        console.log();
         return (
          <ProductContext.Provider value={{
             ...this.state,
